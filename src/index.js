@@ -1,17 +1,15 @@
+/*
+ * @Author: liuxin 1213736251@qq.com
+ * @Date: 2022-12-06 14:13:16
+ * @LastEditors: liuxin 1213736251@qq.com
+ * @LastEditTime: 2022-12-06 15:23:07
+ * @Description: 入口文件
+ * @FilePath: /lx-music-react/src/index.js
+ */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import '@/assets/css/reset.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<App />);

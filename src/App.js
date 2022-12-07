@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+/*
+ * @Author: liuxin 1213736251@qq.com
+ * @Date: 2022-12-06 14:13:16
+ * @LastEditors: liuxin 1213736251@qq.com
+ * @LastEditTime: 2022-12-06 22:08:31
+ * @Description:
+ * @FilePath: /lx-music-react/src/App.js
+ */
+import React, { memo } from 'react';
+import { HashRouter } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
+import routes from '@/router';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Header />
+      {renderRoutes(routes)}
+      <Footer />
+    </HashRouter>
   );
 }
 
-export default App;
+export default memo(App);

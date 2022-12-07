@@ -1,0 +1,74 @@
+/*
+ * @Author: liuxin 1213736251@qq.com
+ * @Date: 2022-12-06 14:28:12
+ * @LastEditors: liuxin 1213736251@qq.com
+ * @LastEditTime: 2022-12-07 16:03:24
+ * @Description: 全局样式
+ * @FilePath: /lx-music-react/src/assets/css/reset.css
+ */
+
+@import '~normalize.css';
+/* 初始化样式 */
+html,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  /* text-decoration: underline; */
+}
+
+input {
+  outline: none;
+}
+/* 全局样式 */
+.text-nowarp {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.wrap-v1 {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap-v2 {
+  width: 980px;
+  margin: 0 auto;
+}
