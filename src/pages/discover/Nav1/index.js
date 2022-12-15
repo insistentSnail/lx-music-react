@@ -2,7 +2,7 @@
  * @Author: liuxin 1213736251@qq.com
  * @Date: 2022-12-07 22:31:21
  * @LastEditors: 刘鑫 1213736251@qq.com
- * @LastEditTime: 2022-12-15 16:35:54
+ * @LastEditTime: 2022-12-15 16:46:52
  * @Description:
  * @FilePath: /lx-music-react/src/pages/discover/Nav1/index.js
  */
@@ -15,7 +15,7 @@ import { getBannerThunk } from './store/actions'
 
 const Nav1 = memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const banner = useSelector(state => state.discover.banner, shallowEqual)
+  const banner = useSelector(state => state.getIn(['discover', 'banner']), shallowEqual)
   const dispatch = useDispatch()
 
   useEffect(() => {

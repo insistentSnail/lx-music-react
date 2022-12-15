@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux-immutable'
 
 import { reducer as discoverNav1Reducer } from '@/pages/discover/Nav1/store'
 
